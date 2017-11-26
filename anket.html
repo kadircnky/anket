@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Post a job position or create your online resume by TheJobs!">
+    <meta name="keywords" content="">
+
+    <title>Anket cevap</title>
+
+    <!-- Styles -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body class="nav-on-header smart-nav">
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="pull-left">
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
+
+          <div class="logo-wrapper">
+            <a class="logo" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="logo-alt" href="index.html"><img src="assets/img/logo-alt.png" alt="logo-alt"></a>
+          </div>
+
+        </div>
+        <!-- END Logo -->
+
+        <!-- User account -->
+        <div class="pull-right">
+
+          <div class="dropdown user-account">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+              <img src="assets/img/logo-envato.png" alt="avatar">
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="admin/login.html">Giriş Yap</a></li>
+              <li><a href="user-register.html">Kayıt Ol</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- END User account -->
+
+        <!-- Navigation menu -->
+        <ul class="nav-menu">
+          <li>
+            <a class="active" href="index.html">Anasayfa</a>
+             
+          </li>
+          <li>
+            <a href="admin/anket-olustur.html">Anket Oluştur</a>
+            
+          </li>
+          <li>
+            <a href="iletisim.html">İletişim</a>
+            
+          </li>
+        </ul>
+        <!-- END Navigation menu -->
+
+      </div>
+    </nav>
+    <!-- END Navigation bar -->
+
+    <form action="#">
+
+      <!-- Page header -->
+      <header class="page-header">
+        <div class="container page-name">
+          <h1 class="text-center">Anketi cevapla</h1>
+          <p class="lead text-center">ardından bize gönder.</p>
+        </div>
+
+        <div class="container">
+
+
+
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              
+					<div id="left_form" style="background-color:#f60; color:#FFF;     padding: 70px 50px 30px;">
+						<figure style=" position: relative; margin: auto; width: 150px;height: 150px;"><img src="assets/img/registration_bg.svg"></figure>
+						<h2>Anket Değerlendirme</h2>
+						<p>Sağ taraftan anket bilgilerini doldurabilirsiniz.</p>
+						<a href="#0" id="more_info" data-toggle="modal" data-target="#more-info"><i class="pe-7s-info"></i></a>
+					</div>
+            </div>
+
+              <div class="col-xs-12 col-sm-8">
+                <div class="form-group">
+                  <input type="text" class="form-control input-lg" placeholder="Adınız Soyadınız" id="txtAdSoyad">
+                </div>
+                
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="E posta adresiniz" id="txtEposta">
+                </div>
+  
+                <div class="form-group">
+                   <input type="text" class="form-control" placeholder="Yaşınız" id="txtYas">
+                </div>
+              <div class="form-group">
+                   <input type="text" class="form-control" placeholder="Bulunduğunuz il" id="txtIl">
+              </div>
+              <!-- soru -->
+              <br>
+              
+                <hr class="hr-lg">
+  
+                <h6>Soru 1 </h6>
+                <p>Daha Önce cnky anket kullandınız mı?</p>
+                <div class="row">
+                  <div class="form-group col-xs-12 col-sm-6"> 
+                      <div class="radio">
+                      <input name="radio1" type="radio" id="radio1" value="evet" checked>
+                      <label for="radio1">Evet</label>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-6"> 
+                        <div class="radio">
+                            <input type="radio" name="radio1" id="radio2" value="hayır" >
+                            <label for="radio2">Hayır</label>
+                        </div> <!-- radio buton-->
+                    </div> <!-- radio button alanı-->
+                  </div> <!-- soru cevapları radio button-->
+                  <!-- /soru -->
+                  <!-- soru -->
+              <br>
+              
+                <hr class="hr-lg">
+  
+                <h6>Soru 2 </h6>
+                <p>Bize nereden ulaştınız?</p>
+                <div class="row">
+                  <div class="form-group col-xs-6 col-sm-3"> 
+                      <div class="checkbox">
+                            <input type="checkbox" id="cbFacebook">
+                            <label for="cbFacebook">Facebook</label>
+                      </div>
+                  </div>
+                  <div class="form-group col-xs-6 col-sm-3"> 
+                        <div class="checkbox">
+                            <input type="checkbox" id="cbInstagram"  >
+                            <label for="cbInstagram">İnstagram</label>
+                      </div> <!-- cb buton-->
+                    </div>
+                    <div class="form-group col-xs-6 col-sm-3"> 
+                      <div class="checkbox">
+                            <input type="checkbox" id="cbGoogle">
+                            <label for="cbGoogle">Google</label>
+                      </div>
+                  </div>
+                  <div class="form-group col-xs-6 col-sm-3"> 
+                        <div class="checkbox">
+                            <input type="checkbox" id="cbDiger" checked="">
+                            <label for="cbDiger">Diğer</label>
+                      </div> <!-- cb buton-->
+                    </div>
+                     <!-- cb alanı-->
+                  </div> <!-- soru cevapları radio button-->
+                  <!-- /soru -->
+                  <!-- soru -->
+              <br>
+              
+                <hr class="hr-lg">
+  
+                <h6>Soru 3 </h6>
+                <p>Hizmetimizi değerlendirebilr misiniz?</p>
+                <div class="row">
+                  <div class="form-group col-xs-12 col-sm-6"> 
+                      <p>5 En iyi 1 en kötü olacak şekilde yorumlayınız</p>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-6"> 
+                        <select class="form-control" id="sbDeger">
+                          <option>5</option>
+                          <option>4</option>
+                          <option>3</option>
+                          <option>2</option>
+                          <option>1</option>
+                        </select> <!-- selectbox buton-->
+                    </div> <!-- selectbox alanı-->
+                  </div> <!-- soru cevapları selectbox-->
+                  <!-- /soru -->
+                  
+                  
+                </div><!-- anket içeriği-->
+             
+          </div> <!-- anket -->
+
+          <div class="button-group">
+             <div class="alert alert-info" role="alert">
+            <strong>Hazır mısın!</strong> Her şeyin tamamsa aşağıdaki butona bas ve cevabını bize gönder
+          </div>
+          </div>
+        </div>
+      </header>
+      <!-- END Page header -->
+
+
+      <!-- Main container -->
+      <main>
+        <!-- Submit -->
+        <section class=" bg-img" style="background-image: url(assets/img/bg-facts.jpg);">
+          <div class="container">
+            <header class="section-header">
+              <span>Tamam mısın?</span>
+              <h2>Anketi Kaydet</h2>
+              <p>Butona tıkladığın zaman anketin kaydedilir ve tarafımıza ulaşılır.</p>
+            </header>
+
+            <p class="text-center"><button class="btn btn-success btn-xl btn-round" id="btnKaydet">Anketi kaydet</button></p>
+
+          </div>
+        </section>
+        <!-- END Submit -->
+
+
+      </main>
+      <!-- END Main container -->
+
+    </form>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+
+      <!-- Top section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Hakkımızda</h6>
+            <p class="text-justify">Gelişmiş ve güncel sistemimiz saysinde siz de 5 dakikada anketinizi oluşturabilirsiniz. Anket sistemimiz ücretsizdir ve herzaman ücretsiz kalacaktır.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Site</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="admin/anket-olustur.html">Anket Oluştur</a></li>
+              <li><a href="iletisim.html">İletişim</a></li> 
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Cnky Anket</h6>
+            <ul class="footer-links">
+              <li><a href="admin/login.html">Giriş Yap</a></li>
+              <li><a href="user-register.html">Kayıt Ol</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <!-- END Top section -->
+
+      <!-- Bottom section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Lisans &copy; 2017 Tüm hakları <a href="#">Cnky Anket</a>.</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END Bottom section -->
+
+    </footer>
+    <!-- END Site footer -->
+
+
+    <!-- Back to top button -->
+    <a id="scroll-up" href="#"><i class="ti-angle-up"></i></a>
+    <!-- END Back to top button -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script>
+    	$(function (){
+			$("#txtYas").keypress(function (event) {
+
+        console.log(event.which);
+
+        if (event.which < 48 || event.which > 57) {
+          return false;
+        }
+      });
+ 
+			$("#btnKaydet").click(function () {
+			var adSoyad = $("#txtAdSoyad").val();
+			var ePosta = $("#txtEposta").val();
+			var yas = $("#txtYas").val();
+			var il = $("#txtIl").val();
+			var cbFacebook = $("#cbFacebook").is(':checked');
+			var cbInstagram = $("#bInstagram").is(':checked');
+			var cbGoogle = $("#cbGoogle").is(':checked');
+			var cbDiger = $("#cbDiger").is(':checked');
+		 	//alert(cbDiger);	
+	
+			if (ePosta == "" || adSoyad == "" || yas == "" || il == "") {
+			  alert("Tüm Alanları Doldurunuz!");
+			  return false;
+			}
+			if (cbFacebook == "0" &  cbInstagram == "0" & cbGoogle == "0" & cbDiger == "0") {
+			  alert("checkboxları boş bıraktınız!");
+			  return false;
+			}
+	          alert("Ankete Katıldınız."); 
+			});
+		 });
+    </script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/vendors/summernote/summernote.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

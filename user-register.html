@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Post a job position or create your online resume by TheJobs!">
+    <meta name="keywords" content="">
+
+    <title>Cnky Anket - Kayıt Ol</title>
+
+    <!-- Styles -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body class="login-page">
+
+
+    <main>
+
+      <div class="login-block">
+        <img src="assets/img/logo.png" alt="">
+        <h1>Hesap bilgilerinizi giriniz.</h1>
+
+        <form action="#">
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="ti-user"></i></span>
+              <input type="text" class="form-control" placeholder="Kullanıcı adı" id="txtKullaniciAdi">
+            </div>
+          </div>
+          
+          <hr class="hr-xs">
+          
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="ti-user"></i></span>
+              <input type="text" class="form-control" placeholder="Ad Soyad" id="txtAdSoyad">
+            </div>
+          </div>
+          
+          <hr class="hr-xs">
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="ti-email"></i></span>
+              <input type="text" class="form-control" placeholder="E posta Adresin" id="txtEposta">
+            </div>
+          </div>
+          
+          <hr class="hr-xs">
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="ti-unlock"></i></span>
+              <input type="password" class="form-control" placeholder="Şifre seçiniz" id="txtSifre">
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block"  id="btnKayitOl"><a href="#" style="color:white;">Kayıt Ol</a></button>
+<br> <!-- type submitini kaldrıdık attr-->
+           
+             <div class="alert alert-success" role="alert" id="kayitBasarili">
+            <strong>Başarılı!</strong> Kaydınız tamamlanmıştır.<a href="admin/login.html"> buradan </a> giriş yapabilirsiniz..
+          </div>
+           
+
+        </form>
+      </div>
+
+      <div class="login-links">
+        <p class="text-center">Hesabınız var mı? <a class="txt-brand" href="admin/login.html">Giriş yap</a></p>
+      </div>
+
+    </main>
+
+
+    <!-- Scripts -->
+     <script src="assets/js/jquery-3.2.1.js"></script>
+    <script>
+    	$(function (){
+			$("#kayitBasarili").hide();
+			$("#btnKayitOl").click(function () {
+	
+			var kullaniciAdi = $("#txtKullaniciAdi").val();
+			var adSoyad = $("#txtAdSoyad").val();
+			var ePosta = $("#txtEposta").val();
+			var sifre = $("#txtSifre").val();	
+	
+			if (kullaniciAdi == "" || adSoyad == "" || ePosta == "" || sifre == "" ) {
+			  alert("Tüm Alanları Doldurunuz!");
+			  return false;
+			}
+	       $("#kayitBasarili").fadeIn(1000);
+		   $("#kayitBasarili").focus();
+			});
+		 });
+    </script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
