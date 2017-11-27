@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Anket Görüntüle - Cnky Anket</title>
+    <title>Anket Güncelle - Cnky Anket</title>
 
     <!-- Core CSS - Include with every page -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -109,7 +109,7 @@
             <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-tasks fa-fw"></i> Anket Oluştur
+                            <i class="fa fa-tasks fa-fw"></i> Anket Güncelle
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -118,8 +118,9 @@
                                 
                             </div>
                             <!-- /.list-group -->
+                            <button class="btn btn-primary btn-block" id="btnCevapEkle">Tümüne Cevap Ekle</button>
                             <a href="#" class="btn btn-default btn-block" id="yeni-soru">Yeni Soru Ekle</a>
-                            <a href="#" class="btn btn-info btn-block" id="güncelle">Güncelle</a>
+                            <a href="#" class="btn btn-info btn-block" id="btnKaydet">Güncelle</a>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -156,7 +157,7 @@
                              
                         </div>
                         <div class="panel-footer">
-                            <div class="col-lg-6 col-md-6 col-sm-6"> <button class="btn btn-primary btn-block" id="cevapEkle">Tümüne Cevap Ekle</button></div><div class="col-lg-6 col-md-6 col-sm-6"> <button class="btn btn-danger btn-block soruyusil">Soruyu Sil</button></div> <br><br>
+                            <div class="col-lg-6 col-md-6 col-sm-6"> </div><div class="col-lg-6 col-md-6 col-sm-6"> <button class="btn btn-danger btn-block soruyusil">Soruyu Sil</button></div> <br><br>
                         </div>
                     </div>
                     <!-- /.panel -->
@@ -192,44 +193,13 @@
     <script src="js/demo/dashboard-demo.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
   <script>
-    $(function () {
-		var sorusayisi = 3;
-      $("#yeni-soru").click(function () {
-         var adsoyad = $("#soru-baslik").html();
-		 console.log(adsoyad);
-         
-
-        $("#anketSorulari").append("<div class='panel panel-info' id='soru1'><div class='panel-heading'>Soru</div><div class='panel-body sorudetayic1'><div class='form-group'><label>Soru Başlığı</label><input class='form-control'></div><div class='form-group'><label>Soru Tipi</label><select class='form-control'><option value='radioButton'>Radio Button(Tek cevap)</option><option value='checkBox'>CheckBox Button(Seçmeli cevap)</option><option value='selectBox'>Select Box (Açılır) Menü</option></select></div><div class='form-group cevap' id='cevap'><label>Soru cevabı</label><input class='form-control'><br> <button class='btn btn-danger btn-block cevapsil'>Cevap Sil</button></div></div><div class='panel-footer'><div class='col-lg-12 col-md-6 col-sm-6'> <button class='btn btn-danger btn-block soruyusil'>Soruyu Sil</button></div> <br><br></div></div>");
-      sorusayisi++;
-	  });
-
- $("#cevapEkle").click(function () { $(".sorudetayic1").append("<div class='form-group' id='cevap'><label>Soru cevabı</label><input class='form-control'><br><button class='btn btn-danger btn-block cevapsil'>Cevap Sil</button></div>");
-      sorusayisi++;
-	  }); 
-	  
-	  $(document).on("click", ".cevapEkle", function () {
-		   
-        var cevapp = $(this).closest(".sorudetayic1");
-        cevapp.add("<div class='form-group' id='cevap'><label>Soru cevabı</label><input class='form-control'><br><button class='btn btn-danger btn-block cevapsil'>Cevap Sil</button></div>");
-      });
-	  
-
-      $(document).on("click", ".cevapsil", function () {
-        var satir = $(this).closest("div");
+    $(function () { 
+	     $(document).on("click", ".sil", function () {
+        var satir = $(this).closest("tr");
         satir.remove();
 
       });
-	   $(document).on("click", ".soruyusil", function () {
-		   
-        var soru1 = $(this).closest("#soru1");
-        soru1.remove();
-      });
-	  
-	 
-	  
-	  
-	  
-    });
+	});
   </script>
 
 </body>
