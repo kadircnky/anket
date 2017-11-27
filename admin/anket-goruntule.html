@@ -182,9 +182,13 @@
   <script>
     $(function () { 
 	     $(document).on("click", ".sil", function () {
-        var satir = $(this).closest("tr");
+         if (confirm('Silmek istediğinizden emin misiniz ?')) {
+         
+    
+		
+		var satir = $(this).closest("tr");
         satir.remove();
-
+		}
       });
 	});
   </script>
